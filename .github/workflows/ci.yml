@@ -1,0 +1,22 @@
+name: Static Game QA
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify JavaScript syntax
+        run: |
+          node --check data.js
+          node --check game.js
+          node --check pwa.js
+          node --check service-worker.js
+      - name: Verify lessons, asset links, and WebP files
+        run: node tests/validate.cjs
