@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#141c38">
+  <meta name="description" content="일상, 출장, 여행 9개 상황에서 118개의 일본어 회화, 듣기 게임과 문장 조립으로 배우는 아케이드 게임">
+  <title>일본어 회화 어드벤처 | SERENA NIHONGO ARCADE</title>
+  <link rel="icon" href="favicon.webp" type="image/webp">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="game.js" defer></script>
+  <script src="pwa.js" defer></script>
+</head>
+<body>
+  <div class="ambient-stars" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="brand" id="home-button" type="button" aria-label="메인 화면으로 돌아가기">
+      <span class="brand-icon">✦</span>
+      <span><strong>SERENA</strong><small>NIHONGO ARCADE</small></span>
+    </button>
+    <div class="topbar-right">
+      <span class="mini-stat" title="학습한 표현"><span aria-hidden="true">📚</span> <b id="known-count">0</b><span class="mini-stat-name">/ 118 표현</span></span>
+      <span class="mini-stat" title="최고 점수"><span aria-hidden="true">🏆</span> <b id="top-score">0</b></span>
+      <button class="top-icon" id="sound-button" type="button" aria-label="효과음 켜기/끄기" title="효과음 설정">🔊</button>
+    </div>
+  </header>
+  <main id="app" class="app" aria-live="off"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer class="site-footer">✦ SERENA NIHONGO ARCADE · 브라우저에서만 실행 · 학습 기록은 이 기기에 저장됩니다.</footer>
+</body>
+</html>

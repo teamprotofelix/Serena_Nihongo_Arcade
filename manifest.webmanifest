@@ -1,0 +1,16 @@
+{
+  "name": "일본어 회화 어드벤처 — SERENA NIHONGO ARCADE",
+  "short_name": "NIHONGO",
+  "description": "일본어 대화 듣기, 문장 조립, 회화 아케이드 게임",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111831",
+  "theme_color": "#141c38",
+  "lang": "ko",
+  "icons": [
+    {"src": "assets/app-icon-192.webp", "sizes": "192x192", "type": "image/webp", "purpose": "any"},
+    {"src": "assets/app-icon-512.webp", "sizes": "512x512", "type": "image/webp", "purpose": "any"}
+  ]
+}
